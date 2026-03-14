@@ -3,6 +3,11 @@ FROM ${BASE_IMAGE}
 
 USER root
 
-RUN apt update && apt install -y sqlite3 && npm install -g @tobilu/qmd
+RUN rm -rf /var/lib/apt/lists/* && \
+    apt update && \
+    apt install -y --no-install-recommends sqlite3 nodejs npm && \
+    apt clean && \
+    rm -rf /var/lib/apt/lists/* && \
+    npm install -g --no-cache @tobilu/qmd
 
 USER node
