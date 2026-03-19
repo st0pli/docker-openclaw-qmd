@@ -1,12 +1,11 @@
 Added QMD support
 
 latest
-
 ghcr.io/openclaw/openclaw:latest
 
-alpine-latest
+docker pull st0p/openclaw-qmd:alpine-latest
 
+alpine-latest
 alpine/openclaw
 
-
-docker push st0p/openclaw-qmd:tagname
+docker pull st0p/openclaw-qmd:latest
