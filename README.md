@@ -1,6 +1,6 @@
 # Added QMD support
 
-## https://github.com/st0pli/openclaw-qmd
+## https://github.com/st0pli/docker-openclaw-qmd
 
 ## latest From ghcr.io/openclaw/openclaw:latest
 ### docker pull st0p/openclaw-qmd:alpine-latest
